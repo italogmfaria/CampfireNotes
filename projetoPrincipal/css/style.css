@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.toplayer {
+  z-indeX: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+button {
+  background: #ff3466;
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: #FFF;
+  border-radius: 6px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+}
+
+.layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #424B54;
+  opacity: 0;
+  transform: scale(0.1);
+  font-size: 27px;
+  transition: all 0.5s ease;
+}
+.layer > * {
+  margin: 3px;
+}
+
+i {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+p {
+  color: #FFF;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  opacity: 0;
+  transition: all 3s ease;
+}
+
+a {
+  opacity: 0;
+  font-size: 18px;
+  color: #ff3466;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.clicked {
+  transition: all 0.5s ease;
+  transform: scale(1);
+  z-index: 100;
+  opacity: 1;
+}
+.clicked p, .clicked a {
+  opacity: 1;
+}
+
+h1 {
+    font-size: 36px;
+    color: black;
+}
+
+ul{
+  color: #FFF;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
