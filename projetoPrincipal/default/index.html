@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Campfire Notes</title>
+</head>
+
+<body>
+    <div class="toplayer">
+        <h1>Campfire Notes</h1><br>
+        <button id="hi">CLIQUE AQUI</button>
+    </div>
+    <div class="layer"><i class="fa fa-remove" id="remove"></i>
+        <p>O Campfire Notes é um projeto de site de bloco de notas simples, projetado para ser uma ferramenta de anotações minimalista e de fácil uso.</p><br>
+        <p>Recursos Principais:</p><br>
+        <ul>
+            <li>Editor de Texto Simples</li>
+            <li>Nomes de Notas Personalizados</li>
+            <li>Tema de Fogueira</li>
+            <li>Pesquisa Rápida</li>
+        </ul>
+        <br><br><br><br>
+        <a href="../index.html">Voltar</a>
+    </div>
+    <script>
+        $("#hi").click(function () {
+            $(".layer").addClass("clicked");
+        });
+
+        $("#remove").click(function () {
+            $(".layer").removeClass("clicked");
+        })
+    </script>
+</body>
+
+</html>
