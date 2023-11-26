@@ -530,7 +530,7 @@ a:focus {
   background-color: #ea9800;
 }
 
-.why_section .box {
+.porque_section .box {
   margin-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,7 +545,7 @@ a:focus {
   text-align: center;
 }
 
-.why_section .box .img-box {
+.porque_section .box .img-box {
   margin-bottom: 20px;
   width: 120px;
   height: 120px;
@@ -564,22 +564,22 @@ a:focus {
           align-items: center;
 }
 
-.why_section .box .img-box img {
+.porque_section .box .img-box img {
   width: 55px;
   height: auto;
   fill: #0f054c;
 }
 
-.why_section .box h5 {
+.porque_section .box h5 {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.why_section .box p {
+.porque_section .box p {
   margin-bottom: 0;
 }
 
-.why_section .btn-box {
+.porque_section .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,7 +589,7 @@ a:focus {
   margin-top: 45px;
 }
 
-.why_section .btn-box a {
+.porque_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
   background-color: #ffa500;
@@ -600,7 +600,7 @@ a:focus {
   border: none;
 }
 
-.why_section .btn-box a:hover {
+.porque_section .btn-box a:hover {
   background-color: #ea9800;
 }
 

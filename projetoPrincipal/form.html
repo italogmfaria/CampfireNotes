@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <title> Login e Cadastro | Campfire Notes </title>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="">
+   </head>
+<body>
+
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="images/front.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Você é sempre<br> bem vindo aqui.</span>
+          <span class="text-2">Conecte-se com você mesmo!</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="images/front.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Cada novo amigo é uma  <br> nova aventura.</span>
+          <span class="text-2">Conecte-se com você mesmo!</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Login</div>
+          <form id="login" action="login">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Digite seu email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Digite sua senha" required>
+              </div>
+              <div class="text"><a href="#">Esqueceu sua senha?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Entrar">
+              </div>
+              <div class="text sign-up-text">Não possui cadastro? <label for="flip">Cadastra-se!</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Cadastro</div>
+        <form id="cadastra" action="cadastra">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Digite seu nome" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Digite seu email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Digite sua senha" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Cadastrar">
+              </div>
+              <div class="text sign-up-text">Já tem uma conta? <label for="flip">Faça o Login!</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+
+ 
+  <script>
+    document.getElementById("login").onsubmit = function() {
+        window.location.href = "main.html"; // Substitua "login.html" pela URL desejada para a página de login
+        return false;
+    };
+
+    document.getElementById("cadastra").onsubmit = function() {
+        window.location.href = "form.html"; // Substitua "cadastra.html" pela URL desejada para a página de cadastro
+        return false;
+    };
+</script>
+
+</body>
+</html>
