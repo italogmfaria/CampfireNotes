@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Página Principal | Campfire Notes</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tabs-container">
+        <ul class="tabs">
+          <li>
+            <a href="index.html" title="Sair"><img src="images/logout.svg" width="30" /></a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="createNewNote()" title="Nova Nota"><img src="images/newnote.svg" width="30" /></a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="openTab('tab2')" title="Rascunho"><img src="images/draw.svg" width="30" /></a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="openTab('tab1')" title="Notas"><img src="images/note.svg" width="30" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-container">
+        <div id="tab1" class="tab-content active-tab">
+          <div class="popup-box">
+            <div class="popup">
+              <div class="content">
+                <header>
+                  <p></p>
+                  <i class="uil uil-times"></i>
+                </header>
+                <form action="#">
+                  <div class="row title">
+                    <label>Título:</label>
+                    <input type="text" spellcheck="false" />
+                  </div>
+                  <div class="row description">
+                    <label>Conteúdo:</label>
+                    <textarea spellcheck="false"></textarea>
+                  </div>
+                  <button></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <li class="add-box">
+              <div class="icon">
+                <img src="images/favicon.ico" width="40" />
+              </div>
+              <p>Nova nota</p>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div id="tab2" class="tab-content">
+        <div id="wrapper">
+          <form id="paper" method="get" action="">
+            <textarea
+              placeholder="Digite seu rascunho aqui..."
+              id="text"
+              name="text"
+              rows="4"
+              style="overflow: hidden; word-wrap: break-word; resize: none"
+            ></textarea>
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <a href="#" onclick="reloadAndDiscardNotes()" title="Reset"><i class="fas fa-sync"></i></a>
+        <a href="#" onclick="toggleDarkMode()" title="Modo Escuro"><i class="fas fa-moon"></i></a>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
